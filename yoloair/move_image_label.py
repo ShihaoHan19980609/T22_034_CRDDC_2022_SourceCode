@@ -38,8 +38,8 @@ for country in countries:
         if not os.path.exists(full_label_path):
             print(full_image_path, '不存在对应标注!')
             pass
-        shutil.copy(full_image_path, image_path)  # 移动训练集图片
-        shutil.copy(full_label_path, label_path)
+        shutil.move(full_image_path, image_path)  # 移动训练集图片
+        shutil.move(full_label_path, label_path)
         new_image_path = os.path.join(image_path, img)
         new_label_path = os.path.join(label_path, img.replace('jpg', 'xml'))
         each_country_list.write(new_image_path + "\n")
