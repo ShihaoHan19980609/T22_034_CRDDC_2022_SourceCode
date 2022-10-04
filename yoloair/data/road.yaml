@@ -1,0 +1,5 @@
+train: Japan.txt # train images (relative to 'path')  16551 images
+val: val.txt # val images (relative to 'path')  4952 images
+# Classes
+nc: 4  # number of classes
+names: [ 'D00', 'D10', 'D20', 'D40' ]  # class names
