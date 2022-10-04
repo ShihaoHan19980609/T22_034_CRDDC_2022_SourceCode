@@ -12,6 +12,8 @@ python move_image_label.py
 python xml2yolo.py
 ```
 ### 3.download the model  
+
+https://pan.baidu.com/s/1z3s9YEG8encVnSAF-7cshw  password: l5h1   
   
 ### 4.detect for each country
 ```python
