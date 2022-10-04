@@ -70,7 +70,7 @@ def main():
     print("total files:", len(xmlFiles))
 
     # loop over each file under dirPath
-    for file in xmlFiles:
+    for file in tqdm(xmlFiles):
         filePath = file.strip()
         # print(filePath)
         tree = ET.parse(filePath)
