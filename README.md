@@ -67,8 +67,8 @@ If the model does not use the Albumentations library, please modify the correspo
 The following table lists all model categories, A for  Albumentations  
 ![image](https://user-images.githubusercontent.com/91840954/195832044-548a646a-52e8-4e5d-b5cd-94fb355e7fe0.png)  
 
-yolov5x pre-training model:  https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5x.pt
-yolov7x pre-training model:  https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7x.pt
+yolov5x pre-training model:  https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5x.pt  
+yolov7x pre-training model:  https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7x.pt  
 
 ### 6.1 First train a general yolov5x model for all countries  
  
