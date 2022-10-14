@@ -64,6 +64,9 @@ China_Czech.txt
 If the model does not use the Albumentations library, please modify the corresponding argument=False,as shown below:
 ![image](https://user-images.githubusercontent.com/91840954/195821951-4ec8156c-939a-41f8-a6cb-675fa845414c.png)  
 
+The following table lists all model categories.  
+![image](https://user-images.githubusercontent.com/91840954/195832044-548a646a-52e8-4e5d-b5cd-94fb355e7fe0.png)  
+
 ### 6.1 First train a general yolov5x model for all countries  
  
 This model is used as the pre-training model for all the following yolov5x (including 640 and 448) models，not for yolov5x-transformer(640 and 448) and yolov7x-640  
