@@ -3,7 +3,7 @@
 # 开发时间: 2022/9/21 17:24
 import random
 
-f = open('Japan.txt', "r")
+f = open('all_country.txt', "r")
 image_list = f.readlines()
 f.close()
 f = open('val.txt', "w")
