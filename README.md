@@ -46,13 +46,37 @@ python xml2yolo.py
 ### 6.Train  
 ```python
 python train_val.py # get val.txt
+```
+For different countries, the corresponding data configuration file needs to be modified before training
+![image](https://user-images.githubusercontent.com/91840954/195821951-4ec8156c-939a-41f8-a6cb-675fa845414c.png)
+6.1First train a general yolov5x model for all countries
 
-#yolov5x
-python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.pt --batch-size 16 --img-size 640 
+Modify the data/road.yaml file training data to the file : all_ country.txt
+
+```
+python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.pt --batch-size 16 --img-size 640 --hyp data/hyps/hyp.scratch-low.yaml --epochs 300
+```
+For Japan
+#yolov5x-640
+python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.pt --batch-size 16 --img-size 640 --hyp data/hyps/hyp.scratch-high.yaml --epochs 300
+
+#yolov5x-448
+python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.pt --batch-size 16 --img-size 448 --hyp data/hyps/hyp.scratch-low.yaml --epochs 100
+
+#yolov5x-transformer-640
+python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 32 --img-size 640 --epochs 300
+
+#yolov5x-transformer-448
+python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 16 --img-size 448 --epochs 300
+
+#yolov7x-640
+python yolov7/train.py --data data/road.yaml --cfg yolov7x.yaml --weight yolov7x.pt --hyp data/hyps/hyp.scratch-high.yaml --batch-size 16 --img-size 640 --epochs 300
+
+
 
 #yolov5x-transformer
 python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 16 --img-size 640 
 
 #yolov7
-python yolov7/train.py --data data/road.yaml --cfg yolov7x.yaml --weight yolov7x.pt --batch-size 16 --img-size 640 
+python yolov7/train.py --data data/road.yaml --cfg yolov7x.yaml --weight yolov7x.pt --batch-size 16 --img-size 640 --epochs 300
 ```
