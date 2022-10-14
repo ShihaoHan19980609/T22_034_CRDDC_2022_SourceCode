@@ -91,12 +91,12 @@ python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.p
 
 ```python
 #yolov5x-transformer-640
-python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 32 --img-size 640 --epochs 300
+python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 16 --img-size 640 --epochs 300
 ```
 
 ```python
 #yolov5x-transformer-448
-python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 16 --img-size 448 --epochs 300
+python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 32 --img-size 448 --epochs 300
 ```
 
 ```python
