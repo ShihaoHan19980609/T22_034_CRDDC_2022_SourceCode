@@ -59,6 +59,7 @@ United_States.txt
 Norway.txt  
 China_MotorBike.txt  
 Czech.txt  
+China_Czech.txt  
 
 If the model does not use the Albumentations library, please modify the corresponding argument=False,as shown below:
 ![image](https://user-images.githubusercontent.com/91840954/195821951-4ec8156c-939a-41f8-a6cb-675fa845414c.png)  
@@ -103,5 +104,6 @@ python yolov7/train.py --data data/road.yaml --cfg yolov7x.yaml --weight yolov7x
 Please refer to the optimal results below to train the corresponding model  
 ![image](https://user-images.githubusercontent.com/91840954/195829399-8cea3d75-691a-4b6c-a3b2-514f6d469de4.png)  
 
+Some models from China and the Czech were trained together,please refer to the table above, for China_Czech.txt  
 
 
