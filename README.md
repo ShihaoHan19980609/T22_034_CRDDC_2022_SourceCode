@@ -70,36 +70,36 @@ The following table lists all model categories, A for  Albumentations
 ### 6.1 First train a general yolov5x model for all countries  
  
 This model is used as the pre-training model for all the following yolov5x (including 640 and 448) models，not for yolov5x-transformer(640 and 448) and yolov7x-640  
-```
+```python
 #all-640-5x-Albumentations
 python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.pt --batch-size 16 --img-size 640 --hyp data/hyps/hyp.scratch-low.yaml --epochs 300
 ```
 
 ### 6.2 We take the Japanese model as an example to train its five models  
 First,replace with Japanese data  
-```
+```python
 #yolov5x-640
 #Please replace the pre-training model parameters，  --weight {all-640-5x-Albumentations}
 python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.pt --batch-size 16 --img-size 640 --hyp data/hyps/hyp.scratch-high.yaml --epochs 300
 ```
 
-```
+```python
 #yolov5x-448-Albumentations
 #Please replace the pre-training model parameters，  --weight {all-640-5x-Albumentations}
 python train.py --data data/road.yaml --cfg yolov5x_road.yaml --weight yolov5x.pt --batch-size 32 --img-size 448 --hyp data/hyps/hyp.scratch-low.yaml --epochs 100
 ```
 
-```
+```python
 #yolov5x-transformer-640
 python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 32 --img-size 640 --epochs 300
 ```
 
-```
+```python
 #yolov5x-transformer-448
 python train.py --data data/road.yaml --cfg yolov5x-transformer.yaml --weights '' --hyp data/hyps/hyp.scratch-high.yaml --batch-size 16 --img-size 448 --epochs 300
 ```
 
-```
+```python
 #yolov7x-640
 python yolov7/train.py --data data/road.yaml --cfg yolov7x.yaml --weight yolov7x.pt --hyp data/hyps/hyp.scratch-high.yaml --batch-size 16 --img-size 640 --epochs 300
 ```
