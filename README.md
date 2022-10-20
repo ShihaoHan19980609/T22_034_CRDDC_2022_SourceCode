@@ -62,10 +62,10 @@ Czech.txt
 China_Czech.txt  
 ```
 If the model does not use the Albumentations library, please modify the corresponding argument=False,as shown below:
-![image](https://user-images.githubusercontent.com/91840954/195821951-4ec8156c-939a-41f8-a6cb-675fa845414c.png)  
+![image](https://user-images.githubusercontent.com/91840954/196968052-8d998635-4e80-43f8-8517-b7fd0a8ae8f6.png)
 
 The following table lists all model categories, A for  Albumentations  
-![1666273856989](https://user-images.githubusercontent.com/91840954/196967376-75b823e5-1410-497b-96f7-d49d35f8b0c6.jpg)  
+![image](https://user-images.githubusercontent.com/91840954/196967870-8aeea698-20f0-495a-bb91-c7c042e1a95d.png)
 
 yolov5x pre-training model:  https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5x.pt  
 yolov7x pre-training model:  https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7x.pt  
