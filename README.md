@@ -61,7 +61,7 @@ China_MotorBike.txt
 Czech.txt  
 China_Czech.txt  
 ```
-If the model does not use the Albumentations library, please modify the corresponding argument=False,as shown below:
+If the model does not use the Albumentations library, please modify the corresponding self.albumentations = False,as shown below:
 ![image](https://user-images.githubusercontent.com/91840954/196968052-8d998635-4e80-43f8-8517-b7fd0a8ae8f6.png)
 
 The following table lists all model categories, A for  Albumentations  
