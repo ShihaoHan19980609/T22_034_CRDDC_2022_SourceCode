@@ -1,7 +1,7 @@
 # CRDDC_2022_SourceCode
 ## 1.Clone repo and install requirements.txt in a Python>=3.7.0 environment, including PyTorch>=1.7.  
 ```python
-git clone https://github.com/KentHan19980609/T22_034_han_shi_hao_CRDDC_2022_SourceCode.git
+git clone https://github.com/KentHan19980609/T22_034_CRDDC_2022_SourceCode.git
 cd T22_034_han_shi_hao_CRDDC_2022_SourceCode/yoloair
 pip install -r requirements.txt  # install
 ```
